@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Updated primary color to a more vibrant orange */
+    --primary: 25 95% 53%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Updated secondary color to a deeper blue for better contrast */
+    --secondary: 215 100% 25%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    /* Updated accent color for more visual interest */
+    --accent: 25 95% 97%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 25 95% 53%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Updated primary color in dark mode */
+    --primary: 25 95% 53%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    /* Updated secondary color in dark mode */
+    --secondary: 215 100% 25%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 25 95% 53%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-secondary tracking-tight;
+  }
+  h1 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  h2 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90 px-6 py-3 rounded-md font-medium transition-colors shadow-md;
+  }
+  .btn-secondary {
+    @apply bg-white text-secondary border border-secondary hover:bg-secondary/5 px-6 py-3 rounded-md font-medium transition-colors shadow-sm;
+  }
+  .section-padding {
+    @apply py-10 md:py-16 lg:py-24;
+  }
+  /* Add these to the existing components layer */
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-elevated;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,122,0,0.5)];
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 15px rgba(255, 122, 0, 0.4);
+  }
+
+  .btn-highlight {
+    @apply bg-primary text-white hover:bg-primary/90 px-6 py-3 rounded-md font-medium transition-all duration-300 shadow-md hover:shadow-glow border-2 border-primary/20 hover:border-primary/40;
+  }
+
+  .btn-outline-highlight {
+    @apply bg-transparent text-primary border-2 border-primary hover:bg-primary/10 px-6 py-3 rounded-md font-medium transition-all duration-300;
+  }
+
+  /* Focus styles for better accessibility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  /* Add these to the existing components layer */
+  .progress-bar-animation {
+    @apply transition-all duration-300 ease-out;
+  }
+}
