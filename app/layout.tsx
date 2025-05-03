@@ -13,7 +13,7 @@ import ScrollToTop from "@/components/scroll-to-top"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Home Construcation Company in Noida | gharbuildr.com",
+  title: "Home Construction Company in Noida | gharbuildr.com",
   description: "gharbuildr.com - Premier home construction, interior design, and renovation services in Noida & Greater Noida. Transparent pricing, guaranteed timelines, and 20-year structural warranty. Get a free consultation today!",
     generator: 'v0.dev'
 }
