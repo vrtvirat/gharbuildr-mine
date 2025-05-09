@@ -34,7 +34,10 @@ export default function HeroForm() {
       <h3 className="text-base md:text-lg font-bold text-secondary mb-2">Request Your Free Consultation</h3>
       <p className="text-gray-600 text-sm mb-3">Fill out this form and we'll get back to you within 24 hours.</p>
 
-      <form onSubmit={handleSubmit} className="space-y-3">
+      <form
+        className="space-y-3"
+        data-netlify="true"
+      >
         <div className="space-y-2">
           <Label htmlFor="name" className="text-sm font-medium">
             Full Name
@@ -89,6 +92,6 @@ export default function HeroForm() {
       </form>
 
       <p className="text-xs text-gray-500 mt-2">By submitting this form, you agree to our privacy policy.</p>
-    </div>
+    </div >
   )
 }
