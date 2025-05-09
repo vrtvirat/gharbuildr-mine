@@ -77,6 +77,48 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="canonical" href="https://gharbuildr.com" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "gharbuildr.com",
+          "image": "https://gharbuildr.com/og-image.jpg",
+          "@id": "https://gharbuildr.com",
+          "url": "https://gharbuildr.com",
+          "telephone": "+91-83838 78137",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "SF 212C, Harsha Mall, Alpha I",
+            "addressLocality": "Greater Noida",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "201310",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.4744,
+            "longitude": 77.5040
+          },
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "09:00",
+            "closes": "19:00"
+          }],
+          "sameAs": [
+            "https://www.facebook.com/gharbuildr/",
+            "https://www.instagram.com/gharbuildr/",
+            "https://www.linkedin.com/company/gharbuildr/",
+            "https://www.youtube.com/@gharbuildr"
+          ]
+        }) }} />
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
