@@ -57,7 +57,7 @@ export default function SitemapPage() {
                     <p className="text-sm text-gray-600 mt-1 ml-6">Portfolio of our completed work</p>
                   </li>
                   <li className="transition-all duration-300 hover:translate-x-1">
-                    <Link href="/blog" className="flex items-center text-secondary hover:text-primary">
+                    <Link href="https://blog.gharbuildr.com/" className="flex items-center text-secondary hover:text-primary">
                       <ChevronRight className="h-4 w-4 mr-2" />
                       <span className="font-medium">Blog</span>
                     </Link>
@@ -169,14 +169,14 @@ export default function SitemapPage() {
                 </div>
                 <ul className="space-y-4">
                   <li className="transition-all duration-300 hover:translate-x-1">
-                    <Link href="/blog" className="flex items-center text-secondary hover:text-primary">
+                    <Link href="https://blog.gharbuildr.com/" className="flex items-center text-secondary hover:text-primary">
                       <ChevronRight className="h-4 w-4 mr-2" />
                       <span className="font-medium">All Articles</span>
                     </Link>
                   </li>
                   <li className="transition-all duration-300 hover:translate-x-1">
                     <Link
-                      href="/blog?category=design-trends"
+                      href="https://blog.gharbuildr.com/"
                       className="flex items-center text-secondary hover:text-primary"
                     >
                       <ChevronRight className="h-4 w-4 mr-2" />
@@ -185,7 +185,7 @@ export default function SitemapPage() {
                   </li>
                   <li className="transition-all duration-300 hover:translate-x-1">
                     <Link
-                      href="/blog?category=construction"
+                      href="https://blog.gharbuildr.com/"
                       className="flex items-center text-secondary hover:text-primary"
                     >
                       <ChevronRight className="h-4 w-4 mr-2" />
@@ -194,7 +194,7 @@ export default function SitemapPage() {
                   </li>
                   <li className="transition-all duration-300 hover:translate-x-1">
                     <Link
-                      href="/blog?category=renovation"
+                      href="https://blog.gharbuildr.com/"
                       className="flex items-center text-secondary hover:text-primary"
                     >
                       <ChevronRight className="h-4 w-4 mr-2" />
