@@ -148,7 +148,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link
-                      href="/blog"
+                      href="https://blog.gharbuildr.com/"
                       className="text-gray-300 hover:text-primary transition-colors flex items-center group"
                     >
                       <span className="bg-primary/20 h-1 w-0 mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300"></span>
@@ -235,9 +235,6 @@ export default function Footer() {
               </Link>
               <Link href="/terms-of-service" className="text-gray-400 text-sm hover:text-primary transition-colors">
                 Terms of Service
-              </Link>
-              <Link href="/sitemap" className="text-gray-400 text-sm hover:text-primary transition-colors">
-                Sitemap
               </Link>
             </div>
           </div>

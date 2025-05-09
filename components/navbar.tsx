@@ -13,7 +13,7 @@ const navLinks = [
   { name: "About Us", href: "/about-us" },
   { name: "Services", href: "#", hasDropdown: true },
   { name: "Projects", href: "/projects" },
-  { name: "Blog", href: "/blog" },
+  { name: "Blog", href: "https://blog.gharbuildr.com/" },
   { name: "Contact Us", href: "/contact" },
 ]
 
