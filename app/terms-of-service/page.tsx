@@ -2,7 +2,18 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Terms of Service | gharbuildr.com",
-  description: "Terms and conditions for using gharbuildr.com services and website.",
+  description: "Review gharbuildr.com's terms of service to understand our policies, procedures, and guidelines for using our construction and interior design services.",
+  openGraph: {
+    title: "Terms of Service | gharbuildr.com",
+    description: "Review gharbuildr.com's terms of service to understand our policies, procedures, and guidelines for using our construction and interior design services.",
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/terms-of-service",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function TermsOfServicePage() {

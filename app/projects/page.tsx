@@ -1,4 +1,27 @@
+import type { Metadata } from "next"
 import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Our Projects | Home Construction & Interior Design Portfolio",
+  description: "Explore gharbuildr.com's portfolio of completed home construction and interior design projects in Noida & Greater Noida. See our quality work and satisfied clients.",
+  openGraph: {
+    title: "Our Projects | Home Construction & Interior Design Portfolio",
+    description: "Explore gharbuildr.com's portfolio of completed home construction and interior design projects in Noida & Greater Noida. See our quality work and satisfied clients.",
+    images: [
+      {
+        url: "/greater-noida-modern-villa.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Our Construction Projects",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/projects",
+  },
+}
 
 export default function ProjectsPage() {
   return (

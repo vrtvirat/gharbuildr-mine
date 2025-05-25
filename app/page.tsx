@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -5,6 +6,26 @@ import HeroForm from "@/components/hero-form"
 import TestimonialCard from "@/components/testimonial-card"
 import TrustBadge from "@/components/trust-badge"
 import { Shield, Award, CheckCircle, Star, CreditCard, Clock, ArrowRight } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Home Construction Company in Noida | gharbuildr.com",
+  description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida. Transparent pricing, guaranteed timelines, and 20-year structural warranty.",
+  openGraph: {
+    title: "Home Construction Company in Noida | gharbuildr.com",
+    description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida. Transparent pricing, guaranteed timelines, and 20-year structural warranty.",
+    images: [
+      {
+        url: "/greater-noida-modern-villa.png",
+        width: 1200,
+        height: 630,
+        alt: "Modern Home Construction in Greater Noida",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com",
+  },
+}
 
 export default function HomePage() {
   return (

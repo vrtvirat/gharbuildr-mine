@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import { Phone, Mail, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -5,6 +6,26 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Label } from "@/components/ui/label"
+
+export const metadata: Metadata = {
+  title: "Contact Us | Get in Touch with Our Construction Experts",
+  description: "Contact gharbuildr.com for your home construction, interior design, or renovation project in Noida & Greater Noida. Free consultation and transparent pricing.",
+  openGraph: {
+    title: "Contact Us | Get in Touch with Our Construction Experts",
+    description: "Contact gharbuildr.com for your home construction, interior design, or renovation project in Noida & Greater Noida. Free consultation and transparent pricing.",
+    images: [
+      {
+        url: "/greater-noida-construction-office.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact gharbuildr.com - Construction Office",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/contact",
+  },
+}
 
 export default function ContactPage() {
   return (
