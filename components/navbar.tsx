@@ -98,14 +98,14 @@ export default function Navbar() {
         {/* Phone and CTA */}
         <div className="hidden md:flex items-center space-x-4">
           <a
-            href="tel:+918383878137"
+            href="tel:+917065120100"
             className={cn(
               "flex items-center hover:text-primary transition-colors",
               isScrolled ? "text-secondary" : "text-white",
             )}
           >
             <Phone className="h-4 w-4 mr-2" />
-            <span className="font-medium">+91-83838 78137</span>
+            <span className="font-medium">+91-70651 20100</span>
           </a>
           <Button variant="highlight" size="default">
             Get Free Consultation
@@ -115,7 +115,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <div className="flex md:hidden items-center space-x-4">
           <a
-            href="tel:+918383878137"
+            href="tel:+917065120100"
             className={cn("hover:text-primary transition-colors", isScrolled ? "text-secondary" : "text-white")}
             aria-label="Call us"
           >

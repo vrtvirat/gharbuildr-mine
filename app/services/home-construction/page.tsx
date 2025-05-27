@@ -575,7 +575,7 @@ export default function HomeConstructionPage() {
                     asChild
                     className="w-full bg-gray-700 hover:bg-gray-800 text-white text-sm py-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.03] relative overflow-hidden group"
                   >
-                    <Link href="tel:+918383878137" className="flex items-center justify-center">
+                    <Link href="tel:+917065120100" className="flex items-center justify-center">
                       <span className="relative flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -837,7 +837,7 @@ export default function HomeConstructionPage() {
                     asChild
                     className="w-full bg-primary hover:bg-primary/90 text-white text-sm py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.03] relative overflow-hidden pulse-border"
                   >
-                    <Link href="tel:+918383878137" className="flex items-center justify-center">
+                    <Link href="tel:+917065120100" className="flex items-center justify-center">
                       <span className="relative flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -1012,7 +1012,7 @@ export default function HomeConstructionPage() {
                     asChild
                     className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white text-sm py-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.03] relative overflow-hidden group"
                   >
-                    <Link href="tel:+918383878137" className="flex items-center justify-center">
+                    <Link href="tel:+917065120100" className="flex items-center justify-center">
                       <span className="relative flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
