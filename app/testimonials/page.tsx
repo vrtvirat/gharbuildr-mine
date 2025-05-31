@@ -1,7 +1,10 @@
 "use client"
+
 import { useEffect, useRef } from "react"
 import Image from "next/image"
-import { Metadata } from "next"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
+import TestimonialCard from "@/components/testimonial-card"
 
 export default function TestimonialsPage() {
   const widgetContainerRef = useRef<HTMLDivElement>(null)
@@ -103,24 +106,4 @@ export default function TestimonialsPage() {
       </section>
     </>
   )
-}
-
-export const metadata: Metadata = {
-  title: "Client Reviews – Noida's Top-Rated Construction Company",
-  description: "Read real client reviews and testimonials. Discover why gharbuildr.com is rated 4.8 stars on Google and is Noida's preferred construction partner.",
-  openGraph: {
-    title: "Client Reviews – Noida's Top-Rated Construction Company",
-    description: "Read real client reviews and testimonials. Discover why gharbuildr.com is rated 4.8 stars on Google and is Noida's preferred construction partner.",
-    images: [
-      {
-        url: "/greater-noida-modern-villa.png",
-        width: 1200,
-        height: 630,
-        alt: "gharbuildr.com - Client Testimonials",
-      },
-    ],
-  },
-  alternates: {
-    canonical: "https://gharbuildr.com/testimonials",
-  },
 }
