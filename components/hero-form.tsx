@@ -23,18 +23,18 @@ export default function HeroForm() {
     setFormData((prev) => ({ ...prev, service: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    setFormData({ name: "", phone: "", service: "" })
-  }
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   console.log("Form submitted:", formData)
+  //   setFormData({ name: "", phone: "", service: "" })
+  // }
 
   return (
     <div className="bg-white rounded-lg shadow-elevated p-4 md:p-6 backdrop-blur-sm bg-white/95 w-full max-w-sm mx-auto">
       <h3 className="text-base md:text-lg font-bold text-secondary mb-2">Request Your Free Consultation</h3>
       <p className="text-gray-600 text-sm mb-3">Fill out this form and we'll get back to you within 24 hours.</p>
 
-      <form onSubmit={handleSubmit} className="space-y-3">
+      <form className="space-y-3" action="https://formbold.com/s/9m212" method="POST">
         <div className="space-y-2">
           <Label htmlFor="name" className="text-sm font-medium">
             Full Name
