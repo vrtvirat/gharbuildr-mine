@@ -3,6 +3,27 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, X } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Renovation Contractors in Noida – Hassle-Free Upgrades",
+  description: "Upgrade your property with gharbuildr.com's hassle-free renovation solutions in Noida. From kitchens to complete makeovers, we deliver on time and within budget.",
+  openGraph: {
+    title: "Renovation Contractors in Noida – Hassle-Free Upgrades",
+    description: "Upgrade your property with gharbuildr.com's hassle-free renovation solutions in Noida. From kitchens to complete makeovers, we deliver on time and within budget.",
+    images: [
+      {
+        url: "/greater-noida-renovation.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Renovation Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/services/renovations",
+  },
+}
 
 export default function RenovationsPage() {
   return (

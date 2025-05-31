@@ -8,11 +8,11 @@ import TrustBadge from "@/components/trust-badge"
 import { Shield, Award, CheckCircle, Star, CreditCard, Clock, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Home Construction Company in Noida | gharbuildr.com",
-  description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida. Transparent pricing, guaranteed timelines, and 20-year structural warranty.",
+  title: "Construction Company in Noida – Guaranteed Price & On-Time Delivery",
+  description: "Experience stress-free home and commercial construction in Noida with gharbuildr.com. Guaranteed price, on-time delivery, 20-year warranty, and a 4.8-star Google rating. Build with trust and transparency.",
   openGraph: {
-    title: "Home Construction Company in Noida | gharbuildr.com",
-    description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida. Transparent pricing, guaranteed timelines, and 20-year structural warranty.",
+    title: "Construction Company in Noida – Guaranteed Price & On-Time Delivery",
+    description: "Experience stress-free home and commercial construction in Noida with gharbuildr.com. Guaranteed price, on-time delivery, 20-year warranty, and a 4.8-star Google rating. Build with trust and transparency.",
     images: [
       {
         url: "/greater-noida-modern-villa.png",

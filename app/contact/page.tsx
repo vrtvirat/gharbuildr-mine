@@ -8,11 +8,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Label } from "@/components/ui/label"
 
 export const metadata: Metadata = {
-  title: "Contact Us | Get in Touch with Our Construction Experts",
-  description: "Contact gharbuildr.com for your home construction, interior design, or renovation project in Noida & Greater Noida. Free consultation and transparent pricing.",
+  title: "Contact gharbuildr.com – Leading Construction Company in Noida",
+  description: "Get in touch with gharbuildr.com—Noida's leading construction experts. Request a quote, ask about our services, or schedule a site visit. We're here to help you build with confidence.",
   openGraph: {
-    title: "Contact Us | Get in Touch with Our Construction Experts",
-    description: "Contact gharbuildr.com for your home construction, interior design, or renovation project in Noida & Greater Noida. Free consultation and transparent pricing.",
+    title: "Contact gharbuildr.com – Leading Construction Company in Noida",
+    description: "Get in touch with gharbuildr.com—Noida's leading construction experts. Request a quote, ask about our services, or schedule a site visit. We're here to help you build with confidence.",
     images: [
       {
         url: "/greater-noida-construction-office.png",

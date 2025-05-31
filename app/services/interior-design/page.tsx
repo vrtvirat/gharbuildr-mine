@@ -3,6 +3,27 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, X } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Interior Design Services in Noida – Modern & Custom Solutions",
+  description: "Transform your space with gharbuildr.com's interior design services in Noida. Modern designs, expert execution, and seamless project management for homes and offices.",
+  openGraph: {
+    title: "Interior Design Services in Noida – Modern & Custom Solutions",
+    description: "Transform your space with gharbuildr.com's interior design services in Noida. Modern designs, expert execution, and seamless project management for homes and offices.",
+    images: [
+      {
+        url: "/greater-noida-interior-design.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Interior Design Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/services/interior-design",
+  },
+}
 
 export default function InteriorDesignPage() {
   return (

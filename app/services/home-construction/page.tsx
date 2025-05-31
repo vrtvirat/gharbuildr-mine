@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, X } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Metadata } from "next"
 
 // Add this CSS class for the pattern grid
 const patternGridStyles = {
@@ -41,6 +42,26 @@ const animationStyles = `
     animation: pulse-border 2s infinite;
   }
 `
+
+export const metadata: Metadata = {
+  title: "Home Construction in Noida – 20-Year Structural Warranty",
+  description: "Build your dream home in Noida with gharbuildr.com. Enjoy guaranteed pricing, zero delays, and a 20-year structural warranty. Trusted by homeowners for quality and transparency.",
+  openGraph: {
+    title: "Home Construction in Noida – 20-Year Structural Warranty",
+    description: "Build your dream home in Noida with gharbuildr.com. Enjoy guaranteed pricing, zero delays, and a 20-year structural warranty. Trusted by homeowners for quality and transparency.",
+    images: [
+      {
+        url: "/greater-noida-modern-villa.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Home Construction Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/services/home-construction",
+  },
+}
 
 export default function HomeConstructionPage() {
   return (

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { CheckCircle, X } from "lucide-react"
 import ServiceCard from "@/components/service-card"
 import { Home, Paintbrush, Hammer } from "lucide-react"
+import { Metadata } from "next"
 
 export default function ServicesPage() {
   return (
@@ -470,4 +471,24 @@ export default function ServicesPage() {
       </section>
     </>
   )
+}
+
+export const metadata: Metadata = {
+  title: "Construction, Interiors & Renovation Services in Noida",
+  description: "Explore our complete range of construction, interior design, and renovation services in Noida. gharbuildr.com delivers quality, reliability, and peace of mind for every project.",
+  openGraph: {
+    title: "Construction, Interiors & Renovation Services in Noida",
+    description: "Explore our complete range of construction, interior design, and renovation services in Noida. gharbuildr.com delivers quality, reliability, and peace of mind for every project.",
+    images: [
+      {
+        url: "/greater-noida-construction-interior.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Our Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/services",
+  },
 }

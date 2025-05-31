@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button"
 import { Shield, Clock, Award, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About Us | Leading Home Construction Company in Noida",
-  description: "Learn about gharbuildr.com's commitment to excellence in home construction, interior design, and renovation services in Noida & Greater Noida. 20-year warranty, transparent pricing, and customer satisfaction.",
+  title: "About gharbuildr.com – Noida's Trusted Construction Experts (4.8★ Google Rated)",
+  description: "Learn why gharbuildr.com is Noida's most trusted construction company. Discover our experience, values, and commitment to quality, transparency, and timely project delivery for every client.",
   openGraph: {
-    title: "About Us | Leading Home Construction Company in Noida",
-    description: "Learn about gharbuildr.com's commitment to excellence in home construction, interior design, and renovation services in Noida & Greater Noida. 20-year warranty, transparent pricing, and customer satisfaction.",
+    title: "About gharbuildr.com – Noida's Trusted Construction Experts (4.8★ Google Rated)",
+    description: "Learn why gharbuildr.com is Noida's most trusted construction company. Discover our experience, values, and commitment to quality, transparency, and timely project delivery for every client.",
     images: [
       {
         url: "/greater-noida-modern-villa.png",
