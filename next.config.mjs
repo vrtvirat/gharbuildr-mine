@@ -19,7 +19,9 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ['@/components', 'lucide-react'],
-    serverActions: true,
+    serverActions: {
+      allowedOrigins: ['gharbuildr.com', 'localhost:3000'],
+    },
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
@@ -27,7 +29,6 @@ const nextConfig = {
   poweredByHeader: false,
   compress: true,
   reactStrictMode: true,
-  swcMinify: true,
   headers: async () => [
     {
       source: '/:path*',

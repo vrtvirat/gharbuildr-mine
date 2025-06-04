@@ -4,12 +4,11 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import dynamic from 'next/dynamic'
 import { ThemeProvider } from "@/components/theme-provider"
+import { ClientWrapper } from "@/components/client-wrapper"
 
 // Dynamically import components with no SSR
 const Navbar = dynamic(() => import("@/components/navbar"), { ssr: true })
 const Footer = dynamic(() => import("@/components/footer"), { ssr: true })
-const ProgressBar = dynamic(() => import("@/components/progress-bar"), { ssr: false })
-const ScrollToTop = dynamic(() => import("@/components/scroll-to-top"), { ssr: false })
 
 // Optimize font loading
 const inter = Inter({ 
@@ -134,11 +133,11 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <ProgressBar />
-          <ScrollToTop />
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
+          <ClientWrapper>
+            <Navbar />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+          </ClientWrapper>
         </ThemeProvider>
       </body>
     </html>
