@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Completed Construction Projects in Noida – gharbuildr.com Portfolio",
+  title: "Construction Projects Portfolio | Noida & Greater Noida | gharbuildr.com",
   description: "View our portfolio of completed construction and renovation projects in Noida. See why gharbuildr.com is trusted for quality, transparency, and timely delivery.",
   openGraph: {
     title: "Completed Construction Projects in Noida – gharbuildr.com Portfolio",
