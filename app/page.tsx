@@ -13,11 +13,11 @@ import { testimonials } from '@/data/testimonials'
 import type { Testimonial } from '@/data/testimonials'
 
 export const metadata: Metadata = {
-  title: "Home Construction & Interior Design in Noida | gharbuildr.com",
-  description: "Experience stress-free home and commercial construction in Noida with gharbuildr.com. Guaranteed price, on-time delivery, 20-year warranty, and a 4.8-star Google rating. Build with trust and transparency.",
+  title: "Home Construction Company in Noida | Guaranteed Price | gharbuildr.com",
+  description: "Leading home construction services in Noida & Greater Noida. We build custom homes with a 20-year warranty, on-time delivery, and transparent pricing. Get your free quote!",
   openGraph: {
-    title: "Construction Company in Noida – Guaranteed Price & On-Time Delivery",
-    description: "Experience stress-free home and commercial construction in Noida with gharbuildr.com. Guaranteed price, on-time delivery, 20-year warranty, and a 4.8-star Google rating. Build with trust and transparency.",
+    title: "Home Construction Company in Noida | Guaranteed Price | gharbuildr.com",
+    description: "Leading home construction services in Noida & Greater Noida. We build custom homes with a 20-year warranty, on-time delivery, and transparent pricing. Get your free quote!",
     images: [
       {
         url: "/greater-noida-modern-villa.png",

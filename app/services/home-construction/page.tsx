@@ -44,11 +44,11 @@ const animationStyles = `
 `
 
 export const metadata: Metadata = {
-  title: "Custom Home Construction in Noida | 20-Year Warranty | gharbuildr.com",
-  description: "Build your dream home in Noida with gharbuildr.com. Enjoy guaranteed pricing, zero delays, and a 20-year structural warranty. Trusted by homeowners for quality and transparency.",
+  title: "Turnkey Home Construction in Noida | 20-Year Warranty | gharbuildr.com",
+  description: "Expert turnkey home construction by Noida's top builders. We manage everything from design and permits to final delivery, ensuring quality and on-time completion. Get a free quote!",
   openGraph: {
-    title: "Home Construction in Noida – 20-Year Structural Warranty",
-    description: "Build your dream home in Noida with gharbuildr.com. Enjoy guaranteed pricing, zero delays, and a 20-year structural warranty. Trusted by homeowners for quality and transparency.",
+    title: "Turnkey Home Construction in Noida | 20-Year Warranty | gharbuildr.com",
+    description: "Expert turnkey home construction by Noida's top builders. We manage everything from design and permits to final delivery, ensuring quality and on-time completion. Get a free quote!",
     images: [
       {
         url: "/greater-noida-modern-villa.png",

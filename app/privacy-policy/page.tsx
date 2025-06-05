@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description: "Read gharbuildr.com's privacy policy. Learn how we protect your data and ensure your information is safe and secure.",
+  title: "Privacy Policy | gharbuildr.com",
+  description: "Read the official privacy policy for gharbuildr.com. Understand how we collect, use, and protect your personal information and data.",
   openGraph: {
-    title: "Privacy Policy",
-    description: "Read gharbuildr.com's privacy policy. Learn how we protect your data and ensure your information is safe and secure.",
+    title: "Privacy Policy | gharbuildr.com",
+    description: "Read the official privacy policy for gharbuildr.com. Understand how we collect, use, and protect your personal information and data.",
     images: [
       {
         url: "/greater-noida-modern-villa.png",

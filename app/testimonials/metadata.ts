@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Client Reviews – Noida's Top-Rated Construction Company",
-  description: "Read real client reviews and testimonials. Discover why gharbuildr.com is rated 4.8 stars on Google and is Noida's preferred construction partner.",
+  title: "gharbuildr.com Reviews & Client Testimonials | Noida",
+  description: "Read what our satisfied clients in Noida say about our construction quality, professionalism, and our commitment to on-time delivery and guaranteed pricing.",
   openGraph: {
-    title: "Client Reviews – Noida's Top-Rated Construction Company",
-    description: "Read real client reviews and testimonials. Discover why gharbuildr.com is rated 4.8 stars on Google and is Noida's preferred construction partner.",
+    title: "gharbuildr.com Reviews & Client Testimonials | Noida",
+    description: "Read what our satisfied clients in Noida say about our construction quality, professionalism, and our commitment to on-time delivery and guaranteed pricing.",
     images: [
       {
         url: "/greater-noida-modern-villa.png",

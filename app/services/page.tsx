@@ -5,11 +5,11 @@ import { CheckCircle, X, Home, Paintbrush, Hammer } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Construction & Interior Design Services in Noida | gharbuildr.com",
-  description: "Explore our complete range of construction, interior design, and renovation services in Noida. gharbuildr.com delivers quality, reliability, and peace of mind for every project.",
+  title: "Construction & Renovation Services in Noida | gharbuildr.com",
+  description: "gharbuildr.com offers expert home construction, full renovations, and modern interior design in Noida. Explore our integrated services for a seamless project experience.",
   openGraph: {
-    title: "Construction, Interiors & Renovation Services in Noida",
-    description: "Explore our complete range of construction, interior design, and renovation services in Noida. gharbuildr.com delivers quality, reliability, and peace of mind for every project.",
+    title: "Construction & Renovation Services in Noida | gharbuildr.com",
+    description: "gharbuildr.com offers expert home construction, full renovations, and modern interior design in Noida. Explore our integrated services for a seamless project experience.",
     images: [
       {
         url: "/greater-noida-construction-interior.png",

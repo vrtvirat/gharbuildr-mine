@@ -1,10 +1,10 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Sitemap",
+  title: "Sitemap | gharbuildr.com",
   description: "Find all pages and resources on gharbuildr.com. Navigate easily to learn more about our construction, interiors, and renovation services in Noida.",
   openGraph: {
-    title: "Sitemap",
+    title: "Sitemap | gharbuildr.com",
     description: "Find all pages and resources on gharbuildr.com. Navigate easily to learn more about our construction, interiors, and renovation services in Noida.",
     images: [
       {

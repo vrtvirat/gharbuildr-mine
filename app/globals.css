@@ -13,18 +13,15 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Updated primary color to a more vibrant orange */
     --primary: 25 95% 53%;
     --primary-foreground: 210 40% 98%;
 
-    /* Updated secondary color to a deeper blue for better contrast */
     --secondary: 215 100% 25%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    /* Updated accent color for more visual interest */
     --accent: 25 95% 97%;
     --accent-foreground: 222.2 47.4% 11.2%;
 

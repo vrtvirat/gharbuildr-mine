@@ -20,7 +20,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gharbuildr.com'),
-  title: "gharbuildr.com - Construction & Interior Design in Noida",
+  title: "Home Construction Company in Noida | Guaranteed Price | gharbuildr.com",
   description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida. Transparent pricing, guaranteed timelines, and 20-year structural warranty. Get a free consultation today!",
   keywords: ["home construction", "interior design", "renovation", "Noida", "Greater Noida", "construction company", "home builder", "interior designer"],
   authors: [{ name: "gharbuildr" }],
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://gharbuildr.com",
     siteName: "gharbuildr.com",
-    title: "gharbuildr.com - Home Construction & Interior Design in Noida",
+    title: "Home Construction Company in Noida | Guaranteed Price | gharbuildr.com",
     description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida. Transparent pricing, guaranteed timelines, and 20-year structural warranty.",
     images: [
       {
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "gharbuildr.com - Home Construction & Interior Design in Noida",
+    title: "Home Construction Company in Noida | Guaranteed Price | gharbuildr.com",
     description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida.",
     images: ["/og-image.jpg"],
     creator: "@gharbuildr",
