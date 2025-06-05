@@ -33,7 +33,7 @@ export default function SitemapPage() {
             <li><a href="/contact" className="text-primary hover:underline">Contact</a></li>
             <li><a href="/projects" className="text-primary hover:underline">Projects</a></li>
             <li><a href="/testimonials" className="text-primary hover:underline">Testimonials</a></li>
-            <li><a href="/blog" className="text-primary hover:underline">Blog</a></li>
+            <li><a href="https://blog.gharbuildr.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Blog</a></li>
           </ul>
         </div>
         <div>

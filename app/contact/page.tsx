@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Label } from "@/components/ui/label"
 
 export const metadata: Metadata = {
-  title: "Contact gharbuildr.com – Leading Construction Company in Noida",
+  title: "Contact gharbuildr.com | Construction Experts in Noida",
   description: "Get in touch with gharbuildr.com—Noida's leading construction experts. Request a quote, ask about our services, or schedule a site visit. We're here to help you build with confidence.",
   openGraph: {
     title: "Contact gharbuildr.com – Leading Construction Company in Noida",

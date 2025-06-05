@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Shield, Clock, Award, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "About gharbuildr.com – Noida's Trusted Construction Experts (4.8★ Google Rated)",
+  title: "About gharbuildr.com | Noida's Trusted Construction Experts",
   description: "Learn why gharbuildr.com is Noida's most trusted construction company. Discover our experience, values, and commitment to quality, transparency, and timely project delivery for every client.",
   openGraph: {
     title: "About gharbuildr.com – Noida's Trusted Construction Experts (4.8★ Google Rated)",

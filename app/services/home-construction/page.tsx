@@ -44,7 +44,7 @@ const animationStyles = `
 `
 
 export const metadata: Metadata = {
-  title: "Home Construction in Noida – 20-Year Structural Warranty",
+  title: "Custom Home Construction in Noida | 20-Year Warranty | gharbuildr.com",
   description: "Build your dream home in Noida with gharbuildr.com. Enjoy guaranteed pricing, zero delays, and a 20-year structural warranty. Trusted by homeowners for quality and transparency.",
   openGraph: {
     title: "Home Construction in Noida – 20-Year Structural Warranty",
