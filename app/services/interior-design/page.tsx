@@ -6,11 +6,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Interior Design Services in Noida – Modern & Custom Solutions",
-  description: "Transform your space with gharbuildr.com's interior design services in Noida. Modern designs, expert execution, and seamless project management for homes and offices.",
+  title: "Interior Designers in Noida for Homes & Offices | gharbuildr.com",
+  description: "Transform your space with our expert interior design services in Noida. From modular kitchens to complete home interiors, we create functional and beautiful living spaces.",
   openGraph: {
-    title: "Interior Design Services in Noida – Modern & Custom Solutions",
-    description: "Transform your space with gharbuildr.com's interior design services in Noida. Modern designs, expert execution, and seamless project management for homes and offices.",
+    title: "Interior Designers in Noida for Homes & Offices | gharbuildr.com",
+    description: "Transform your space with our expert interior design services in Noida. From modular kitchens to complete home interiors, we create functional and beautiful living spaces.",
     images: [
       {
         url: "/greater-noida-interior-design.png",

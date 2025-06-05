@@ -6,11 +6,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Renovation Contractors in Noida – Hassle-Free Upgrades",
-  description: "Upgrade your property with gharbuildr.com's hassle-free renovation solutions in Noida. From kitchens to complete makeovers, we deliver on time and within budget.",
+  title: "Home Renovation Contractors in Noida | Kitchen & Bathroom",
+  description: "Top home renovation contractors in Noida. We specialize in high-quality kitchen, bathroom, and full-home renovations with transparent pricing. Contact us for an estimate.",
   openGraph: {
-    title: "Renovation Contractors in Noida – Hassle-Free Upgrades",
-    description: "Upgrade your property with gharbuildr.com's hassle-free renovation solutions in Noida. From kitchens to complete makeovers, we deliver on time and within budget.",
+    title: "Home Renovation Contractors in Noida | Kitchen & Bathroom",
+    description: "Top home renovation contractors in Noida. We specialize in high-quality kitchen, bathroom, and full-home renovations with transparent pricing. Contact us for an estimate.",
     images: [
       {
         url: "/greater-noida-renovation.png",

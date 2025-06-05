@@ -13,7 +13,7 @@ const navLinks = [
   { name: "About Us", href: "/about-us" },
   { name: "Services", href: "#", hasDropdown: true },
   { name: "Projects", href: "/projects" },
-  { name: "Blog", href: "https://blog.gharbuildr.com/" },
+  { name: "Blog", href: "https://blog.gharbuildr.com/", external: true },
   { name: "Contact Us", href: "/contact" },
 ]
 
@@ -79,6 +79,19 @@ export default function Navbar() {
                   ))}
                 </div>
               </div>
+            ) : link.external ? (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "text-white hover:text-primary transition-colors duration-300 font-medium text-sm uppercase tracking-wide relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full",
+                  isScrolled ? "text-secondary" : "text-white",
+                )}
+              >
+                {link.name}
+              </a>
             ) : (
               <Link
                 key={link.name}

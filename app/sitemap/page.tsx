@@ -1,10 +1,10 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Sitemap",
+  title: "Sitemap | gharbuildr.com",
   description: "Find all pages and resources on gharbuildr.com. Navigate easily to learn more about our construction, interiors, and renovation services in Noida.",
   openGraph: {
-    title: "Sitemap",
+    title: "Sitemap | gharbuildr.com",
     description: "Find all pages and resources on gharbuildr.com. Navigate easily to learn more about our construction, interiors, and renovation services in Noida.",
     images: [
       {
@@ -33,7 +33,7 @@ export default function SitemapPage() {
             <li><a href="/contact" className="text-primary hover:underline">Contact</a></li>
             <li><a href="/projects" className="text-primary hover:underline">Projects</a></li>
             <li><a href="/testimonials" className="text-primary hover:underline">Testimonials</a></li>
-            <li><a href="/blog" className="text-primary hover:underline">Blog</a></li>
+            <li><a href="https://blog.gharbuildr.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Blog</a></li>
           </ul>
         </div>
         <div>

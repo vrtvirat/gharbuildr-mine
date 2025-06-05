@@ -8,11 +8,11 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Label } from "@/components/ui/label"
 
 export const metadata: Metadata = {
-  title: "Contact gharbuildr.com – Leading Construction Company in Noida",
-  description: "Get in touch with gharbuildr.com—Noida's leading construction experts. Request a quote, ask about our services, or schedule a site visit. We're here to help you build with confidence.",
+  title: "Contact Our Home Builders in Noida | Free Quote | gharbuildr.com",
+  description: "Ready to build your dream home in Noida? Contact us today for a free, no-obligation consultation and quote. Call us or fill out our form for a prompt response.",
   openGraph: {
-    title: "Contact gharbuildr.com – Leading Construction Company in Noida",
-    description: "Get in touch with gharbuildr.com—Noida's leading construction experts. Request a quote, ask about our services, or schedule a site visit. We're here to help you build with confidence.",
+    title: "Contact Our Home Builders in Noida | Free Quote | gharbuildr.com",
+    description: "Ready to build your dream home in Noida? Contact us today for a free, no-obligation consultation and quote. Call us or fill out our form for a prompt response.",
     images: [
       {
         url: "/greater-noida-construction-office.png",
@@ -56,7 +56,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div>
               <h2 className="mb-6">Send Us Your Inquiry</h2>
-              <form className="space-y-6">
+              <form className="space-y-6"  action="https://formbold.com/s/35A87" method="POST">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Full Name</Label>

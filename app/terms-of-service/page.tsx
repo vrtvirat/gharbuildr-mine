@@ -1,11 +1,11 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Terms of Service",
-  description: "Review gharbuildr.com's terms of service. Understand your rights, responsibilities, and our commitment to transparent, reliable construction services.",
+  title: "Terms of Service | gharbuildr.com",
+  description: "Official terms of service for using the gharbuildr.com website and our associated construction and design services.",
   openGraph: {
-    title: "Terms of Service",
-    description: "Review gharbuildr.com's terms of service. Understand your rights, responsibilities, and our commitment to transparent, reliable construction services.",
+    title: "Terms of Service | gharbuildr.com",
+    description: "Official terms of service for using the gharbuildr.com website and our associated construction and design services.",
     images: [
       {
         url: "/greater-noida-modern-villa.png",
