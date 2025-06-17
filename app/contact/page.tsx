@@ -56,7 +56,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div>
               <h2 className="mb-6">Send Us Your Inquiry</h2>
-              <form className="space-y-6"  action="https://formbold.com/s/35A87" method="POST">
+              <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <Label htmlFor="name">Full Name</Label>
