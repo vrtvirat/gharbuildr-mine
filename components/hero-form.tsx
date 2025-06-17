@@ -63,6 +63,6 @@ export default function HeroForm() {
       </form>
 
       <p className="text-xs text-gray-500 mt-2">By submitting this form, you agree to our privacy policy.</p>
-    </div>
+    </div >
   )
 }
