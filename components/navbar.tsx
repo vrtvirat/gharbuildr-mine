@@ -13,7 +13,7 @@ const navLinks = [
   { name: "About Us", href: "/about-us" },
   { name: "Services", href: "#", hasDropdown: true },
   { name: "Projects", href: "/projects" },
-  { name: "Blog", href: "https://blog.gharbuildr.com/" },
+  { name: "Blog", href: "https://blog.gharbuildr.com/", external: true },
   { name: "Contact Us", href: "/contact" },
 ]
 
@@ -79,6 +79,19 @@ export default function Navbar() {
                   ))}
                 </div>
               </div>
+            ) : link.external ? (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "text-white hover:text-primary transition-colors duration-300 font-medium text-sm uppercase tracking-wide relative after:absolute after:bottom-[-4px] after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full",
+                  isScrolled ? "text-secondary" : "text-white",
+                )}
+              >
+                {link.name}
+              </a>
             ) : (
               <Link
                 key={link.name}
@@ -98,14 +111,14 @@ export default function Navbar() {
         {/* Phone and CTA */}
         <div className="hidden md:flex items-center space-x-4">
           <a
-            href="tel:+918383878137"
+            href="tel:+917065120100"
             className={cn(
               "flex items-center hover:text-primary transition-colors",
               isScrolled ? "text-secondary" : "text-white",
             )}
           >
             <Phone className="h-4 w-4 mr-2" />
-            <span className="font-medium">+91-83838 78137</span>
+            <span className="font-medium">+91-70651 20100</span>
           </a>
           <Button variant="highlight" size="default">
             Get Free Consultation
@@ -115,7 +128,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <div className="flex md:hidden items-center space-x-4">
           <a
-            href="tel:+918383878137"
+            href="tel:+917065120100"
             className={cn("hover:text-primary transition-colors", isScrolled ? "text-secondary" : "text-white")}
             aria-label="Call us"
           >

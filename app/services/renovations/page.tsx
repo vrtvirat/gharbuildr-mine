@@ -3,6 +3,27 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, X } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Home Renovation Contractors in Noida | Kitchen & Bathroom",
+  description: "Top home renovation contractors in Noida. We specialize in high-quality kitchen, bathroom, and full-home renovations with transparent pricing. Contact us for an estimate.",
+  openGraph: {
+    title: "Home Renovation Contractors in Noida | Kitchen & Bathroom",
+    description: "Top home renovation contractors in Noida. We specialize in high-quality kitchen, bathroom, and full-home renovations with transparent pricing. Contact us for an estimate.",
+    images: [
+      {
+        url: "/greater-noida-renovation.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Renovation Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/services/renovations",
+  },
+}
 
 export default function RenovationsPage() {
   return (

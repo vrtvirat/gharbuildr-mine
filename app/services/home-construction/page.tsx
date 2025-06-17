@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, X } from "lucide-react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Metadata } from "next"
 
 // Add this CSS class for the pattern grid
 const patternGridStyles = {
@@ -41,6 +42,26 @@ const animationStyles = `
     animation: pulse-border 2s infinite;
   }
 `
+
+export const metadata: Metadata = {
+  title: "Turnkey Home Construction in Noida | 20-Year Warranty | gharbuildr.com",
+  description: "Expert turnkey home construction by Noida's top builders. We manage everything from design and permits to final delivery, ensuring quality and on-time completion. Get a free quote!",
+  openGraph: {
+    title: "Turnkey Home Construction in Noida | 20-Year Warranty | gharbuildr.com",
+    description: "Expert turnkey home construction by Noida's top builders. We manage everything from design and permits to final delivery, ensuring quality and on-time completion. Get a free quote!",
+    images: [
+      {
+        url: "/greater-noida-modern-villa.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Home Construction Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/services/home-construction",
+  },
+}
 
 export default function HomeConstructionPage() {
   return (
@@ -575,7 +596,7 @@ export default function HomeConstructionPage() {
                     asChild
                     className="w-full bg-gray-700 hover:bg-gray-800 text-white text-sm py-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.03] relative overflow-hidden group"
                   >
-                    <Link href="tel:+918383878137" className="flex items-center justify-center">
+                    <Link href="tel:+917065120100" className="flex items-center justify-center">
                       <span className="relative flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -837,7 +858,7 @@ export default function HomeConstructionPage() {
                     asChild
                     className="w-full bg-primary hover:bg-primary/90 text-white text-sm py-6 rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-[1.03] relative overflow-hidden pulse-border"
                   >
-                    <Link href="tel:+918383878137" className="flex items-center justify-center">
+                    <Link href="tel:+917065120100" className="flex items-center justify-center">
                       <span className="relative flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -1012,7 +1033,7 @@ export default function HomeConstructionPage() {
                     asChild
                     className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white text-sm py-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-xl hover:scale-[1.03] relative overflow-hidden group"
                   >
-                    <Link href="tel:+918383878137" className="flex items-center justify-center">
+                    <Link href="tel:+917065120100" className="flex items-center justify-center">
                       <span className="relative flex items-center">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

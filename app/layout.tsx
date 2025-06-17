@@ -2,22 +2,25 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import dynamic from 'next/dynamic'
 import { ThemeProvider } from "@/components/theme-provider"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
+import { ClientWrapper } from "@/components/client-wrapper"
 
-// Import the new components at the top of the file
-import ProgressBar from "@/components/progress-bar"
-import ScrollToTop from "@/components/scroll-to-top"
+// Dynamically import components with no SSR
+const Navbar = dynamic(() => import("@/components/navbar"), { ssr: true })
+const Footer = dynamic(() => import("@/components/footer"), { ssr: true })
 
-const inter = Inter({ subsets: ["latin"] })
+// Optimize font loading
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial']
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://gharbuildr.com'),
-  title: {
-    default: "Home Construction Company in Noida | gharbuildr.com",
-    template: "%s | gharbuildr.com"
-  },
+  title: "Home Construction Company in Noida | Guaranteed Price | gharbuildr.com",
   description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida. Transparent pricing, guaranteed timelines, and 20-year structural warranty. Get a free consultation today!",
   keywords: ["home construction", "interior design", "renovation", "Noida", "Greater Noida", "construction company", "home builder", "interior designer"],
   authors: [{ name: "gharbuildr" }],
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: "https://gharbuildr.com",
     siteName: "gharbuildr.com",
-    title: "Home Construction Company in Noida | gharbuildr.com",
+    title: "Home Construction Company in Noida | Guaranteed Price | gharbuildr.com",
     description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida. Transparent pricing, guaranteed timelines, and 20-year structural warranty.",
     images: [
       {
@@ -46,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-  title: "Home Construction Company in Noida | gharbuildr.com",
+    title: "Home Construction Company in Noida | Guaranteed Price | gharbuildr.com",
     description: "Premier home construction, interior design, and renovation services in Noida & Greater Noida.",
     images: ["/og-image.jpg"],
     creator: "@gharbuildr",
@@ -67,7 +70,6 @@ export const metadata: Metadata = {
   },
 }
 
-// Update the RootLayout function to include the ProgressBar component
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -76,8 +78,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff7a00" />
+        <meta name="msapplication-TileColor" content="#ff7a00" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="canonical" href="https://gharbuildr.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preload" as="image" href="/og-image.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
@@ -122,11 +133,11 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <ProgressBar />
-          <ScrollToTop />
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
+          <ClientWrapper>
+            <Navbar />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+          </ClientWrapper>
         </ThemeProvider>
       </body>
     </html>

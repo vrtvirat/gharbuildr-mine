@@ -2,7 +2,26 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Terms of Service | gharbuildr.com",
-  description: "Terms and conditions for using gharbuildr.com services and website.",
+  description: "Official terms of service for using the gharbuildr.com website and our associated construction and design services.",
+  openGraph: {
+    title: "Terms of Service | gharbuildr.com",
+    description: "Official terms of service for using the gharbuildr.com website and our associated construction and design services.",
+    images: [
+      {
+        url: "/greater-noida-modern-villa.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Terms of Service",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/terms-of-service",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function TermsOfServicePage() {

@@ -149,6 +149,8 @@ export default function Footer() {
                   <li>
                     <Link
                       href="https://blog.gharbuildr.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-gray-300 hover:text-primary transition-colors flex items-center group"
                     >
                       <span className="bg-primary/20 h-1 w-0 mr-0 group-hover:w-3 group-hover:mr-2 transition-all duration-300"></span>
@@ -194,8 +196,8 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-white font-medium">Call Us</p>
-                  <a href="tel:+918383878137" className="text-gray-300 hover:text-primary transition-colors">
-                    +91-83838 78137
+                  <a href="tel:+917065120100" className="text-gray-300 hover:text-primary transition-colors">
+                    +91-70651 20100
                   </a>
                 </div>
               </li>

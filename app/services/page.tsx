@@ -1,9 +1,28 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { CheckCircle, X } from "lucide-react"
-import ServiceCard from "@/components/service-card"
-import { Home, Paintbrush, Hammer } from "lucide-react"
+import { CheckCircle, X, Home, Paintbrush, Hammer } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Construction & Renovation Services in Noida | gharbuildr.com",
+  description: "gharbuildr.com offers expert home construction, full renovations, and modern interior design in Noida. Explore our integrated services for a seamless project experience.",
+  openGraph: {
+    title: "Construction & Renovation Services in Noida | gharbuildr.com",
+    description: "gharbuildr.com offers expert home construction, full renovations, and modern interior design in Noida. Explore our integrated services for a seamless project experience.",
+    images: [
+      {
+        url: "/greater-noida-construction-interior.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Our Services",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/services",
+  },
+}
 
 export default function ServicesPage() {
   return (
@@ -47,24 +66,50 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ServiceCard
-              icon={<Home className="h-10 w-10 text-primary" />}
-              title="Home Construction"
-              description="Custom homes built to your specifications, combining aesthetic appeal with functional design and quality construction."
-              link="/services/home-construction"
-            />
-            <ServiceCard
-              icon={<Paintbrush className="h-10 w-10 text-primary" />}
-              title="Interior Design"
-              description="Transform your space with our expert interior design services tailored to your lifestyle and preferences."
-              link="/services/interior-design"
-            />
-            <ServiceCard
-              icon={<Hammer className="h-10 w-10 text-primary" />}
-              title="Renovations"
-              description="Breathe new life into your existing property with our comprehensive renovation services."
-              link="/services/renovations"
-            />
+            <div className="bg-white rounded-lg shadow-card p-6 hover:shadow-lg transition-shadow">
+              <div className="mb-4">
+                <Home className="h-10 w-10 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Home Construction</h3>
+              <p className="text-gray-600 mb-4">
+                Custom homes built to your specifications, combining aesthetic appeal with functional design and quality construction.
+              </p>
+              <Link href="/services/home-construction">
+                <Button variant="link" className="p-0">
+                  Learn More →
+                </Button>
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-card p-6 hover:shadow-lg transition-shadow">
+              <div className="mb-4">
+                <Paintbrush className="h-10 w-10 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Interior Design</h3>
+              <p className="text-gray-600 mb-4">
+                Transform your space with our expert interior design services tailored to your lifestyle and preferences.
+              </p>
+              <Link href="/services/interior-design">
+                <Button variant="link" className="p-0">
+                  Learn More →
+                </Button>
+              </Link>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-card p-6 hover:shadow-lg transition-shadow">
+              <div className="mb-4">
+                <Hammer className="h-10 w-10 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold mb-3">Renovations</h3>
+              <p className="text-gray-600 mb-4">
+                Breathe new life into your existing property with our comprehensive renovation services.
+              </p>
+              <Link href="/services/renovations">
+                <Button variant="link" className="p-0">
+                  Learn More →
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

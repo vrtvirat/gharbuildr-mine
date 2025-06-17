@@ -2,7 +2,26 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Privacy Policy | gharbuildr.com",
-  description: "Privacy policy and data protection information for gharbuildr.com clients and website visitors.",
+  description: "Read the official privacy policy for gharbuildr.com. Understand how we collect, use, and protect your personal information and data.",
+  openGraph: {
+    title: "Privacy Policy | gharbuildr.com",
+    description: "Read the official privacy policy for gharbuildr.com. Understand how we collect, use, and protect your personal information and data.",
+    images: [
+      {
+        url: "/greater-noida-modern-villa.png",
+        width: 1200,
+        height: 630,
+        alt: "gharbuildr.com - Privacy Policy",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/privacy-policy",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function PrivacyPolicyPage() {

@@ -1,3 +1,4 @@
+import type { Metadata } from "next"
 import Image from "next/image"
 import { Phone, Mail, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -5,6 +6,26 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Label } from "@/components/ui/label"
+
+export const metadata: Metadata = {
+  title: "Contact Our Home Builders in Noida | Free Quote | gharbuildr.com",
+  description: "Ready to build your dream home in Noida? Contact us today for a free, no-obligation consultation and quote. Call us or fill out our form for a prompt response.",
+  openGraph: {
+    title: "Contact Our Home Builders in Noida | Free Quote | gharbuildr.com",
+    description: "Ready to build your dream home in Noida? Contact us today for a free, no-obligation consultation and quote. Call us or fill out our form for a prompt response.",
+    images: [
+      {
+        url: "/greater-noida-construction-office.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact gharbuildr.com - Construction Office",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://gharbuildr.com/contact",
+  },
+}
 
 export default function ContactPage() {
   return (
@@ -90,8 +111,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-1">Phone</h3>
-                    <a href="tel:+918383878137" className="text-lg text-secondary hover:text-primary transition-colors">
-                      +91-83838 78137
+                    <a href="tel:+917065120100" className="text-lg text-secondary hover:text-primary transition-colors">
+                      +91-70651 20100
                     </a>
                   </div>
                 </div>
